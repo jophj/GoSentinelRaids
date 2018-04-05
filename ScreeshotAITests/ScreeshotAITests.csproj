@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Cloud.Vision.V1" Version="1.1.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0-preview-20180320-02" />
+    <PackageReference Include="xunit" Version="2.4.0-beta.1.build3958" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0-beta.1.build3958" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="GoogleVision\Screenshots\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ScreenshotAI\ScreenshotAI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="GoogleVision\Screenshots\d5f7a003-3efa-4850-b1a0-94a6ffab62e8.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
